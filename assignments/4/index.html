@@ -1,19 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Assignment 4 - JavaScript Interaction</title>
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="./styles/styles.css">
 </head>
 <body>
-  <h1>JavaScript Interaction Example</h1>
-  <p id="output">Click the button to see a message!</p>
-
-  <!-- The button that calls your JS function -->
-  <button onclick="showMessage()">Click Me</button>
-
-  <!-- Link to your JavaScript file -->
-  <script src="hello.js"></script>
+  <img 
+      src="images/img.jpg" 
+      alt="Headshot of Bahara Mehry">
+  <h1>Bahara Mehry</h1>
   
+<!-- about me  -->
+  <h2>About Me</h2>
+  <p>Hello! I am Bahara Mehry. I am a computer science major at San Francisco State. I am learning new skills and building projects that combine coding with real-time problem-solving.  
+     Artificial Intelligence and Machine Learning are something I am passionate about. I believe that we are a part of a great era in technology, and while I am excited about all the 
+     positive impact of these technologies in our lives, I also recognize the potential risk coming with it and the ethical responsibilities we have as computer scientists.  </p>
+<!-- skills -->
+  <h2>Programming Languages</h2>
+  <ul>
+    <li>HTML</li>
+    <li>Java</li>
+    <li>Python</li>
+    
+  </ul>
+<!-- projects -->
+ <h2>Projects</h2>
+<ul class="projects">
+  <li class="project-card">
+    <img 
+      src="./images/calculator.jpg" 
+      alt="Preview of JavaScript Calculator" 
+      class="project-thumb">
+    <div class="project-body">
+      <h3>JavaScript Calculator</h3>
+      <p>This is a simple and responsive calculator that performs basic operations includin; addition, subtraction, multiplication, division. It supports both button clicks and keyboard input for quick calculations.</p>
+      <p class="tech"><strong>Built with:</strong> HTML, CSS, JavaScript.</p>
+      <a href="./calculator.html" target="_blank">View Calculator</a>
+    </div>
+  </li>
+</ul>
+    
+<!--contact-->
+<h2>Contacts</h2>
+<p>Email: <a href= "mailto:bmehry@sfsu.edu">Email</a></p>
+<p>GitHub:<a href="https://github.com/dashboard">GitHub Account</a></p>
+<p>LinkedIn:<a href="https://www.linkedin.com/in/bahara-mehry-517510300/">LinkedIn Account</a></p>
+
+<!--theme switcher -->
+<div class="theme-toggle">
+  <label for="theme-select">Theme:</label>
+  <select id="theme-select">
+    <option value="Formal">Formal</option>
+    <option value="crazy">Playful</option>
+    
+  </select>
+</div>
+
+<script src="./scripts/theme.js"></script>
+
 </body>
 </html>

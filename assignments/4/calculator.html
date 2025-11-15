@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Calculator</title>
+
+  <!-- Calculator-specific styles (matches your folder structure) -->
+  <link rel="stylesheet" href="./styles/calculator.css">
+</head>
+<body>
+  <main class="calc-shell">
+  <a class="back-link" href="./index.html">← Back to Portfolio</a>
+
+</div>
+
+    <div class="calc">
+      
+      <!-- Display with tape INSIDE -->
+      <output class="display" id="display" aria-live="polite" aria-atomic="true">
+        <span class="mem-flag" id="memFlag" aria-hidden="true">M</span>
+        <span class="tape" id="tape"></span>
+        <span id="mainValue">0</span>
+      </output>
+
+      <div class="keys" role="group" aria-label="Calculator keypad">
+        <!-- row #1 -->
+        <button class="btn mem" aria-label="Memory Clear">MC</button>
+        <button class="btn mem" aria-label="Memory Recall">MR</button>
+        <button class="btn mem" aria-label="Memory Add">M+</button>
+        <button class="btn mem" aria-label="Memory Subtract">M−</button>
+
+        <!-- row #2 -->
+        <button class="btn util" aria-label="All Clear">AC</button>
+        <button class="btn util" aria-label="Toggle sign">+/−</button>
+        <button class="btn util" aria-label="Percent">%</button>
+        <button class="btn op"   aria-label="Divide">÷</button>
+
+        <!-- Row #3 -->
+        <button class="btn num">7</button>
+        <button class="btn num">8</button>
+        <button class="btn num">9</button>
+        <button class="btn op"  aria-label="Multiply">×</button>
+
+        <!-- Row #4 -->
+        <button class="btn num">4</button>
+        <button class="btn num">5</button>
+        <button class="btn num">6</button>
+        <button class="btn op"  aria-label="Subtract">−</button>
+
+        <!-- Row #5 -->
+        <button class="btn num">1</button>
+        <button class="btn num">2</button>
+        <button class="btn num">3</button>
+        <button class="btn op"  aria-label="Add">+</button>
+
+        <!-- Row #6 -->
+        <button class="btn num zero">0</button>
+        <button class="btn num">.</button>
+        <button class="btn equals" aria-label="Equals">=</button>
+      </div>
+    </div>
+  </main>
+
+  <p class="help">
+    <strong>Memory:</strong> <kbd>MC</kbd> clears, <kbd>MR</kbd> recalls, <kbd>M+</kbd> adds display to memory, <kbd>M−</kbd> subtracts display from memory.
+    Keyboard: <kbd>m</kbd> → MR, <kbd>Shift+m</kbd> → MC, <kbd>Alt+m</kbd> → M+, <kbd>Alt+Shift+m</kbd> → M−.
+  </p>
+
+
+  <script src="./scripts/calculator.js"></script>
+</body>
+</html>
